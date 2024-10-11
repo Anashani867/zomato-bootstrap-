@@ -1,62 +1,119 @@
-.gr{
+ .gr {
+            width: 200px;
+        }
 
-   width: 200px;
-}
+        .card img {
+            height: 200px; /* لتحديد ارتفاع الصورة */
+            object-fit: cover; /* لجعل الصورة مناسبة داخل البطاقة */
+        }
+
+        .space {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .location-card {
+            border-radius: 12px;
+            border: 1px solid #eaeaea;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .location-card:hover {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-card .places {
+            color: #757575;
+        }
+
+        .mg {
+            margin-top: 10px;
+        }
+
+        form {
+            background-color: #FFFBF7;
+        }
+
+        .im1 {
+            position: relative;
+            right: 50px;
+        }
+
+        .lok {
+            position: absolute;
+            top: 2000px;
+            left: 700px;
+        }
+
+        .sp {
+            margin: 10px;
+            padding: 30px;
+        }
+
+        .hd {
+            position: absolute;
+        }
 
 
-.card img {
-   height: 200px; /* لتحديد ارتفاع الصورة */
-   object-fit: cover; /* لجعل الصورة مناسبة داخل البطاقة */
- }
 
- .space{
+        .img-fluid {
+            width: 100%;
+            height: auto;
+        }
 
-   display: flex;
-   justify-content: space-around;
-
- }
+   
 
 
 
- .location-card {
-   border-radius: 12px;
-   border: 1px solid #eaeaea;
-   padding: 15px;
-   margin-bottom: 10px;
- }
- .location-card:hover {
-   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
- }
- .location-card .places {
-   color: #757575;
- }
+        .hero-text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: white;
+          z-index: 10;
+      }
 
+      .hero-text h1 {
+          font-size: 4rem;
+          font-weight: bold;
+      }
 
- .mg{
+      .hero-text p {
+          font-size: 1.5rem;
+      }
+   
+      .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        background-color: transparent; /* جعل الخلفية شفافة */
+    }
 
-  margin-top: 10px;
- }
-  form{
-    background-color: #FFFBF7;
+    /* تنسيق الروابط في شريط التنقل */
+    .navbar-nav a {
+        color: rgb(11, 1, 1); /* اللون الأسود للنص */
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .navbar-nav a:hover {
+        text-decoration: underline;
+    }
+    .search-bar {
+      position: absolute;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      width: 80%; /* يمكنك تعديل العرض هنا */
+      padding: 10px;
   }
- .im1{
-  position: relative;
-  right:  50px;
 
- }
 
- .lok{
-  position: absolute;
-  top: 2000px;
-  left: 700px;
-
-}
-
-.sp{
-  margin: 10px;
-  padding: 30px;
-}
-
-.hd{
-  position: absolute;
-}
